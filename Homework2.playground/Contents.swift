@@ -70,7 +70,7 @@ class Homework2 {
         var charge = 100
         var extra = 0
         
-        if amount < 50 {
+        if amount <= 50 {
             return charge
         } else {
             extra = ( amount - 50 ) * 4
