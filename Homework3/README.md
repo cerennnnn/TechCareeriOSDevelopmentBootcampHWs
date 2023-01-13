@@ -1,4 +1,4 @@
-✨ In my 3rd homework for Techcareer Bootcamp I designed a screen that supports both dark mode and Turkish language. 
+✨ In my 3rd homework for TM iOS Developer Bootcamp with Swift organized by techcareer.net, I designed a screen that supports both dark mode and Turkish language. 
 
 Screens:
 
