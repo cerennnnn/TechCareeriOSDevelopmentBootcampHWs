@@ -1,0 +1,32 @@
+//
+//  PageX.swift
+//  Homework4
+//
+//  Created by Ceren Güneş on 15.01.2023.
+//
+
+import UIKit
+
+class PageX: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func goToPageYButtonPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "goToPageY", sender: nil)
+    }
+    
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+}

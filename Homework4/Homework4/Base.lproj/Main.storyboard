@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="swd-so-Oma">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home -->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomePage" customModule="Homework4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Gb-L4-MOT">
+                                <rect key="frame" x="90.000000000000014" y="223" width="213.33333333333337" height="54"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="Jnb-FO-CfI">
+                                <rect key="frame" x="134.66666666666666" y="547" width="123.66666666666666" height="108.66666666666663"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QAh-ZV-5jw">
+                                        <rect key="frame" x="0.0" y="0.0" width="123.66666666666667" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Go to page A"/>
+                                        <connections>
+                                            <action selector="goToPageAButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pqm-Uz-V5H"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4o-Mj-NlE">
+                                        <rect key="frame" x="0.0" y="74.333333333333371" width="123.66666666666667" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Go to page X"/>
+                                        <connections>
+                                            <action selector="goToPageBButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rdN-2J-oxC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Jnb-FO-CfI" firstAttribute="top" secondItem="9Gb-L4-MOT" secondAttribute="bottom" constant="270" id="3IM-VV-y2u"/>
+                            <constraint firstItem="Jnb-FO-CfI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ddv-A4-jll"/>
+                            <constraint firstItem="9Gb-L4-MOT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aVW-o0-STK"/>
+                            <constraint firstItem="9Gb-L4-MOT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="weS-pf-doq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home " id="8Yc-ni-7wF"/>
+                    <connections>
+                        <segue destination="nwZ-nc-Eu5" kind="show" identifier="goToPageA" id="fkz-uz-1Rn"/>
+                        <segue destination="OyO-2M-7QY" kind="show" identifier="goToPageX" id="kgp-0h-cJb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="983.96946564885491" y="-2.1126760563380285"/>
+        </scene>
+        <!--X-->
+        <scene sceneID="r8w-dc-1Lf">
+            <objects>
+                <viewController id="OyO-2M-7QY" customClass="PageX" customModule="Homework4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ddq-bN-aWI">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page X" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="woT-2B-ZAB">
+                                <rect key="frame" x="132" y="223" width="129" height="54"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npU-wx-xCe">
+                                <rect key="frame" x="135" y="577" width="123" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Go to page Y"/>
+                                <connections>
+                                    <action selector="goToPageYButtonPressed:" destination="OyO-2M-7QY" eventType="touchUpInside" id="gkV-kI-LzL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PvK-1x-Ty6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="npU-wx-xCe" firstAttribute="centerX" secondItem="ddq-bN-aWI" secondAttribute="centerX" id="294-6t-HZB"/>
+                            <constraint firstItem="woT-2B-ZAB" firstAttribute="centerX" secondItem="ddq-bN-aWI" secondAttribute="centerX" id="JDM-93-7tx"/>
+                            <constraint firstItem="woT-2B-ZAB" firstAttribute="top" secondItem="PvK-1x-Ty6" secondAttribute="top" constant="120" id="bAt-OZ-IEi"/>
+                            <constraint firstItem="npU-wx-xCe" firstAttribute="top" secondItem="woT-2B-ZAB" secondAttribute="bottom" constant="300" id="jRv-7L-8O0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="X" id="6JB-aI-TiK"/>
+                    <connections>
+                        <segue destination="xqk-Za-mkm" kind="show" identifier="goToPageY" id="pbU-el-uxD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EcK-C1-QBh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1799.2366412213739" y="480.98591549295776"/>
+        </scene>
+        <!--PageY-->
+        <scene sceneID="mDf-XO-pyf">
+            <objects>
+                <viewController id="xqk-Za-mkm" customClass="PageY" customModule="Homework4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Oe-27-Yqq">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page Y" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9x-Oy-RrF">
+                                <rect key="frame" x="132.66666666666666" y="223" width="127.99999999999997" height="54"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ANX-Bh-7cn">
+                                <rect key="frame" x="117.66666666666669" y="577" width="158" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Go to Home Page"/>
+                                <connections>
+                                    <action selector="goToHomePageButtonPressed:" destination="xqk-Za-mkm" eventType="touchUpInside" id="n6L-EN-NjY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Xju-zS-cTm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ANX-Bh-7cn" firstAttribute="centerX" secondItem="9Oe-27-Yqq" secondAttribute="centerX" id="NY9-qe-bM0"/>
+                            <constraint firstItem="F9x-Oy-RrF" firstAttribute="centerX" secondItem="9Oe-27-Yqq" secondAttribute="centerX" id="Tkw-o8-G81"/>
+                            <constraint firstItem="ANX-Bh-7cn" firstAttribute="top" secondItem="F9x-Oy-RrF" secondAttribute="bottom" constant="300" id="gAh-bO-SXH"/>
+                            <constraint firstItem="F9x-Oy-RrF" firstAttribute="top" secondItem="Xju-zS-cTm" secondAttribute="top" constant="120" id="iZR-rf-VVx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="jaY-LF-B5Y"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ua6-lm-Kbn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2741.2213740458014" y="480.98591549295776"/>
+        </scene>
+        <!--A-->
+        <scene sceneID="iGv-rd-HR9">
+            <objects>
+                <viewController id="nwZ-nc-Eu5" customClass="PageA" customModule="Homework4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ymg-bI-hb2">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Bo-TZ-nCW">
+                                <rect key="frame" x="131.66666666666666" y="223" width="129.99999999999997" height="54"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K3g-rm-Xcq">
+                                <rect key="frame" x="135" y="577" width="123" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Go to page B"/>
+                                <connections>
+                                    <action selector="goToPageBButtonPressed:" destination="nwZ-nc-Eu5" eventType="touchUpInside" id="Aib-Tz-2ux"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ebp-O6-F3c"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5Bo-TZ-nCW" firstAttribute="centerX" secondItem="Ymg-bI-hb2" secondAttribute="centerX" id="ZpY-pB-uOw"/>
+                            <constraint firstItem="K3g-rm-Xcq" firstAttribute="centerX" secondItem="Ymg-bI-hb2" secondAttribute="centerX" id="cnG-zM-YhJ"/>
+                            <constraint firstItem="K3g-rm-Xcq" firstAttribute="top" secondItem="5Bo-TZ-nCW" secondAttribute="bottom" constant="300" id="q5w-9m-HAa"/>
+                            <constraint firstItem="5Bo-TZ-nCW" firstAttribute="top" secondItem="Ebp-O6-F3c" secondAttribute="top" constant="120" id="w71-px-5of"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="A" id="Jnq-x9-evY"/>
+                    <connections>
+                        <segue destination="WIu-Lq-c36" kind="show" identifier="goToPageB" id="Jc6-ad-s3X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1l7-Wd-J8J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1797.709923664122" y="-265.49295774647891"/>
+        </scene>
+        <!--B-->
+        <scene sceneID="2cN-Ky-vM8">
+            <objects>
+                <viewController id="WIu-Lq-c36" customClass="PageB" customModule="Homework4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FW2-AH-pnI">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page B" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Nn-6a-ofL">
+                                <rect key="frame" x="132.66666666666666" y="223" width="127.99999999999997" height="54"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfT-Ru-Mu5">
+                                <rect key="frame" x="135" y="577" width="123" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Go to page Y"/>
+                                <connections>
+                                    <action selector="goToPageYButtonPressed:" destination="WIu-Lq-c36" eventType="touchUpInside" id="Zwk-17-gcA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YI4-rY-jDG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sfT-Ru-Mu5" firstAttribute="centerX" secondItem="FW2-AH-pnI" secondAttribute="centerX" id="77j-cs-XBQ"/>
+                            <constraint firstItem="5Nn-6a-ofL" firstAttribute="top" secondItem="YI4-rY-jDG" secondAttribute="top" constant="120" id="CZ7-9Q-fBD"/>
+                            <constraint firstItem="sfT-Ru-Mu5" firstAttribute="top" secondItem="5Nn-6a-ofL" secondAttribute="bottom" constant="300" id="TdP-fL-r1L"/>
+                            <constraint firstItem="5Nn-6a-ofL" firstAttribute="centerX" secondItem="FW2-AH-pnI" secondAttribute="centerX" id="Zbl-Oi-rac"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="B" id="qfh-l4-OFR"/>
+                    <connections>
+                        <segue destination="xqk-Za-mkm" kind="show" identifier="goToPageYFromB" id="i6l-dm-nkZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o8f-85-jR1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2741.2213740458014" y="-265.49295774647891"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="oSD-1Q-i7a">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="swd-so-Oma" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="t3G-Bj-Mgf">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9ar-8i-Lhn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rO7-0r-8Ns" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57.251908396946561" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="i6l-dm-nkZ"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
