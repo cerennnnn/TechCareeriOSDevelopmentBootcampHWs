@@ -1,6 +1,7 @@
 ✨ In my 3rd homework for TM iOS Developer Bootcamp with Swift organized by techcareer.net, I designed a screen that supports both dark mode and Turkish language.                 
 
 ✨ For this small project, I used:
+ - Google Fonts
  - Auto Layout
  - Stack Views
  - UINavigationController
