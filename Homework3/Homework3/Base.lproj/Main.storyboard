@@ -16,24 +16,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="5E1-01-uCl">
-                                <rect key="frame" x="46.666666666666657" y="733" width="300" height="50"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cheesecake" translatesAutoresizingMaskIntoConstraints="NO" id="ceo-UX-qEn">
+                                <rect key="frame" x="46.666666666666657" y="113" width="300" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="Ofe-Rw-Rka"/>
+                                    <constraint firstAttribute="width" constant="300" id="i6I-uc-bLN"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="30"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Raspberry Cheesecake" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Fd-E8-GtX">
+                                <rect key="frame" x="63.333333333333343" y="523" width="266.33333333333326" height="40"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="25"/>
+                                <color key="textColor" name="fontColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Creamy New York cheesecake  that's topped with a quick and easy raspberry sauce and topped with loads of fresh raspberries." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzB-9E-M5q">
+                                <rect key="frame" x="20" y="642" width="353" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="fontColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="RO4-23-25R">
+                                <rect key="frame" x="33.666666666666657" y="753" width="325.66666666666674" height="33.666666666666629"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="voQ-WW-NfK">
-                                        <rect key="frame" x="0.0" y="0.0" width="115" height="50"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
-                                        <color key="textColor" name="primaryTextColor"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f0V-Ma-Rcb">
+                                        <rect key="frame" x="0.0" y="0.0" width="45.666666666666664" height="33.666666666666664"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <color key="textColor" name="fontColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E1i-Z5-ie1">
-                                        <rect key="frame" x="185" y="0.0" width="115" height="50"/>
-                                        <color key="backgroundColor" name="buttonColor"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="naU-yu-iVm">
+                                        <rect key="frame" x="195.66666666666669" y="0.0" width="130" height="33.666666666666664"/>
+                                        <color key="backgroundColor" name="fontColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="dvI-CO-c6H"/>
+                                            <constraint firstAttribute="width" constant="130" id="DRG-j7-7FC"/>
                                         </constraints>
+                                        <color key="tintColor" name="buttonColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Add to Card">
-                                            <color key="baseForegroundColor" name="secondaryTextColor"/>
+                                            <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                         </buttonConfiguration>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
@@ -41,54 +64,42 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Raspberry-Cheesecake" translatesAutoresizingMaskIntoConstraints="NO" id="N2v-c4-hCC">
-                                <rect key="frame" x="75" y="112.99999999999997" width="243.33333333333337" height="340.33333333333326"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
-                                </userDefinedRuntimeAttributes>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Creamy New York cheesecake that's topped with a quick and easy raspberry sauce and then topped with loads of fresh raspberries." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cas-dV-aty">
-                                <rect key="frame" x="40" y="594.33333333333337" width="313" height="68"/>
-                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="160" translatesAutoresizingMaskIntoConstraints="NO" id="bMw-ne-xrh">
-                                <rect key="frame" x="63" y="529.33333333333337" width="267.33333333333331" height="32"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="aDY-Xx-cKp">
+                                <rect key="frame" x="52.666666666666657" y="585" width="287.66666666666674" height="32"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khJ-Jj-ouy">
-                                        <rect key="frame" x="0.0" y="0.0" width="13.333333333333334" height="32"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                        <nil key="textColor"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oel-O6-SBw">
+                                        <rect key="frame" x="0.0" y="0.0" width="94" height="32"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <color key="textColor" name="fontColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="4dr-Ce-rXu">
-                                        <rect key="frame" x="173.33333333333334" y="0.0" width="94.000000000000028" height="32"/>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="b9e-ih-Pl8">
+                                        <rect key="frame" x="194" y="0.0" width="93.666666666666686" height="32"/>
+                                        <color key="backgroundColor" name="fontColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                                        </userDefinedRuntimeAttributes>
                                     </stepper>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Raspberry Cheesecake" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZH-cl-QB2">
-                                <rect key="frame" x="47.666666666666657" y="466.33333333333331" width="298" height="28"/>
-                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="28"/>
-                                <color key="textColor" name="primaryTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="backgroundColor"/>
                         <constraints>
-                            <constraint firstItem="cas-dV-aty" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="0Iw-DH-1jt"/>
-                            <constraint firstItem="5E1-01-uCl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2we-JI-V6P"/>
-                            <constraint firstItem="bMw-ne-xrh" firstAttribute="top" secondItem="YZH-cl-QB2" secondAttribute="bottom" constant="35" id="Eif-WO-qc5"/>
-                            <constraint firstItem="N2v-c4-hCC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KYn-OT-zKc"/>
-                            <constraint firstItem="cas-dV-aty" firstAttribute="top" secondItem="YZH-cl-QB2" secondAttribute="bottom" constant="100" id="MCP-TR-nHZ"/>
-                            <constraint firstItem="N2v-c4-hCC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="byc-Ks-SQc"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5E1-01-uCl" secondAttribute="bottom" constant="35" id="eXM-Ts-1pf"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cas-dV-aty" secondAttribute="trailing" constant="40" id="hYX-wV-5CH"/>
-                            <constraint firstItem="bMw-ne-xrh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ksA-qa-eps"/>
-                            <constraint firstItem="YZH-cl-QB2" firstAttribute="top" secondItem="N2v-c4-hCC" secondAttribute="bottom" constant="13" id="mcK-Wo-fTV"/>
-                            <constraint firstItem="YZH-cl-QB2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pIq-ch-yFX"/>
-                            <constraint firstItem="cas-dV-aty" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xXt-IZ-diR"/>
+                            <constraint firstAttribute="trailing" secondItem="bzB-9E-M5q" secondAttribute="trailing" constant="20" id="9fJ-9S-m8e"/>
+                            <constraint firstItem="7Fd-E8-GtX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GRJ-6X-zna"/>
+                            <constraint firstItem="aDY-Xx-cKp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="52.666666666666657" id="IE2-Ld-VmY"/>
+                            <constraint firstItem="RO4-23-25R" firstAttribute="top" secondItem="bzB-9E-M5q" secondAttribute="bottom" constant="50" id="IVM-LM-4Gr"/>
+                            <constraint firstItem="RO4-23-25R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KI6-1O-bOk"/>
+                            <constraint firstItem="aDY-Xx-cKp" firstAttribute="top" secondItem="7Fd-E8-GtX" secondAttribute="bottom" constant="22" id="ZRi-VG-ePg"/>
+                            <constraint firstItem="aDY-Xx-cKp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="btD-g7-O7J"/>
+                            <constraint firstItem="ceo-UX-qEn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="fEC-pk-dH4"/>
+                            <constraint firstItem="7Fd-E8-GtX" firstAttribute="top" secondItem="ceo-UX-qEn" secondAttribute="bottom" constant="10" id="j4b-3l-mjO"/>
+                            <constraint firstItem="aDY-Xx-cKp" firstAttribute="top" secondItem="7Fd-E8-GtX" secondAttribute="bottom" constant="22" id="lsf-MF-uDn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aDY-Xx-cKp" secondAttribute="bottom" constant="201" id="oAF-hT-pj2"/>
+                            <constraint firstItem="bzB-9E-M5q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="ofh-gY-phZ"/>
+                            <constraint firstItem="ceo-UX-qEn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qb8-5b-9Xq"/>
+                            <constraint firstItem="bzB-9E-M5q" firstAttribute="top" secondItem="aDY-Xx-cKp" secondAttribute="bottom" constant="25" id="rtx-SW-NB9"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="OlW-7R-1zk"/>
@@ -117,18 +128,15 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Raspberry-Cheesecake" width="243.33332824707031" height="340.33334350585938"/>
+        <image name="cheesecake" width="730" height="1021"/>
         <namedColor name="backgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.19200000166893005" green="0.21199999749660492" blue="0.22400000691413879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="buttonColor">
-            <color red="0.16078431372549018" green="0.1764705882352941" blue="0.19215686274509802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.16099999845027924" green="0.17599999904632568" blue="0.19200000166893005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="primaryTextColor">
-            <color red="0.20392156862745098" green="0.2196078431372549" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="secondaryTextColor">
-            <color red="0.58039215686274503" green="0.59999999999999998" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="fontColor">
+            <color red="0.79600000381469727" green="0.80800002813339233" blue="0.81199997663497925" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

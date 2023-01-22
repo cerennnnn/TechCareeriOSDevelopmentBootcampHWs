@@ -1,18 +1,18 @@
 
-/* Class = "UIButton"; configuration.title = "Add to Card"; ObjectID = "E1i-Z5-ie1"; */
-"E1i-Z5-ie1.configuration.title" = "Karta Ekle";
+/* Class = "UILabel"; text = "Raspberry Cheesecake"; ObjectID = "7Fd-E8-GtX"; */
+"7Fd-E8-GtX.text" = "Ahududulu Cheesecake";
 
-/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "E1i-Z5-ie1"; */
-"E1i-Z5-ie1.normalTitle" = "Button";
+/* Class = "UILabel"; text = "2"; ObjectID = "Oel-O6-SBw"; */
+"Oel-O6-SBw.text" = "2";
 
-/* Class = "UILabel"; text = "Raspberry Cheesecake"; ObjectID = "YZH-cl-QB2"; */
-"YZH-cl-QB2.text" = "Ahududulu Cheesecake";
+/* Class = "UILabel"; text = "Creamy New York cheesecake  that's topped with a quick and easy raspberry sauce and topped with loads of fresh raspberries."; ObjectID = "bzB-9E-M5q"; */
+"bzB-9E-M5q.text" = "Taptaze ahududu sosu ve leziz ahududular ile kremalı New York cheesecake.";
 
-/* Class = "UILabel"; text = "Creamy New York cheesecake that's topped with a quick and easy raspberry sauce and then topped with loads of fresh raspberries."; ObjectID = "cas-dV-aty"; */
-"cas-dV-aty.text" = "Üzerinde taze ve lezzetli ahududu sosu ve içerisinde yumuşacık peyniriyle muhteşem New York cheesecake.";
+/* Class = "UILabel"; text = "$10"; ObjectID = "f0V-Ma-Rcb"; */
+"f0V-Ma-Rcb.text" = "120₺";
 
-/* Class = "UILabel"; text = "2"; ObjectID = "khJ-Jj-ouy"; */
-"khJ-Jj-ouy.text" = "2";
+/* Class = "UIButton"; configuration.title = "Add to Card"; ObjectID = "naU-yu-iVm"; */
+"naU-yu-iVm.configuration.title" = "Karta Ekle";
 
-/* Class = "UILabel"; text = "$10"; ObjectID = "voQ-WW-NfK"; */
-"voQ-WW-NfK.text" = "10₺";
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "naU-yu-iVm"; */
+"naU-yu-iVm.normalTitle" = "Button";
